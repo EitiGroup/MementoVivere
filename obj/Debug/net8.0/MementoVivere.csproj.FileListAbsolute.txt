@@ -1,0 +1,11 @@
+/home/esteban/Perso/MementoVivere/obj/Debug/net8.0/MementoVivere.csproj.AssemblyReference.cache
+/home/esteban/Perso/MementoVivere/obj/Debug/net8.0/Avalonia/Resources.Inputs.cache
+/home/esteban/Perso/MementoVivere/obj/Debug/net8.0/Avalonia/resources
+/home/esteban/Perso/MementoVivere/obj/Debug/net8.0/MementoVivere.GeneratedMSBuildEditorConfig.editorconfig
+/home/esteban/Perso/MementoVivere/obj/Debug/net8.0/MementoVivere.AssemblyInfoInputs.cache
+/home/esteban/Perso/MementoVivere/obj/Debug/net8.0/MementoVivere.AssemblyInfo.cs
+/home/esteban/Perso/MementoVivere/obj/Debug/net8.0/MementoVivere.csproj.CoreCompileInputs.cache
+/home/esteban/Perso/MementoVivere/obj/Debug/net8.0/MementoVivere.sourcelink.json
+/home/esteban/Perso/MementoVivere/obj/Debug/net8.0/MementoVivere.dll
+/home/esteban/Perso/MementoVivere/obj/Debug/net8.0/refint/MementoVivere.dll
+/home/esteban/Perso/MementoVivere/obj/Debug/net8.0/MementoVivere.pdb

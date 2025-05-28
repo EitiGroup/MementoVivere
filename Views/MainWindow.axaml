@@ -1,0 +1,44 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:MementoVivere.ViewModels"
+        x:Class="MementoVivere.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="MementoVivere - Productivité Gamifiée"
+        Width="600" Height="400">
+
+    <Design.DataContext>
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+
+    <Grid Margin="16">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- XP et niveau utilisateur -->
+        <StackPanel Orientation="Horizontal" Grid.Row="0" Spacing="16" VerticalAlignment="Center">
+            <TextBlock Text="XP : " FontWeight="Bold" FontSize="16"/>
+            <TextBlock Text="{Binding User.Experience}" FontSize="16"/>
+            <TextBlock Text="| Niveau : " FontWeight="Bold" FontSize="16" Margin="16,0,0,0"/>
+            <TextBlock Text="{Binding User.Level}" FontSize="16"/>
+        </StackPanel>
+
+        <!-- Liste des tâches -->
+        <DataGrid Grid.Row="1" Items="{Binding Tasks}" AutoGenerateColumns="False" Margin="0,16,0,16" RowHeight="32">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Tâche" Binding="Title" Width="*"/>
+                <DataGridTextColumn Header="XP" Binding="XpReward" Width="80"/>
+                <DataGridCheckBoxColumn Header="Complétée" Binding="IsCompleted" Width="100"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!-- Boutons d'action -->
+        <StackPanel Orientation="Horizontal" Grid.Row="2" HorizontalAlignment="Right" Spacing="8">
+            <Button Content="Valider une tâche" Width="160" Height="32" Command="{Binding ValidateTaskCommand}"/>
+            <Button Content="Ajouter une tâche" Width="160" Height="32" Click="AddTaskButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
